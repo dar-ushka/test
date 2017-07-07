@@ -10,6 +10,7 @@ addons:
       description: "Build submitted via Travis CI"
     notification_email: coverity_checker@cloudlinux.com
     branch_pattern: master
+    build_prepend_command: "pwd; ls"
     build_command: "gcc -o ~/build/dar-ushka/test/test_c ~/build/dar-ushka/test/example1_1.c"
 env:
   global:
