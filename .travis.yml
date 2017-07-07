@@ -3,16 +3,15 @@ language: python
 dist: precise
 install: ""
 script: ""
-env:
-  global:
-    - secure: "ApsVrkZBTViXzFP6wxyFqZSrzQqczHp0X9FVq+ucgRpfh3Qp2gvTyRHVwQSOBNqft5U+RvbvFxAyJaEubkUbEFZtGbqh0ZpHksrVxJwMnlt5YdLjvbM/Os83lLyeg6klJp09x1MNBoceVPko/3SCXfCf32qLhqSSlhkU97jDyv98vdebHsriPB9muULQXIVisAfS8Svdsq1WCyYsgIlcMcjv1NPiNia2dFVhqUWmJdGMtSz1EKhF0c4BJx9KXQCZutSg87bnlOyuvRtASemzXvHEwwX5+D1DnVWMMyf6tJoJiKCIdy8x8kOK+nCLX6gTd0JfhSyV3Jea8PKDPdijJsZ4/Nqw57e9V22nVie2wLc2B5orX2IPfCdf7u7w0p2ALMFRWimGBvu7akW84s23OaeFCUFfujXYl9usfv5vXvFiabVLQTyFvz4DbMjgzBp5rgiwVolppAgNkPzT+zELUQE7DrUxaPvB8YcXr03ufABEpf4bMawLr9cY29BP+GLLXMcLrTnAi622QVsE54khzaJwLaxXM3qtaNHUucewhAovj25aH6zkiW7IHtXsQKOob4d6hzynWohH/X5Y1uHZRHkNgGhN5kQT6t6ISQh5cDy68yLMZF3TYS9EdiuDOY+AXAKNnnAKQa6p1fkDh3UvjTbfEbF/knmueU3cgfTuy3I="
-
 addons:
   coverity_scan:
     project:
       name: "dar-ushka/test"
       description: "Build submitted via Travis CI"
     notification_email: coverity_checker@cloudlinux.com
+    branch_pattern: master
     build_command_prepend: ""
     build_command:   ""
-    branch_pattern: master
+env:
+  global:
+    - secure: "ApsVrkZBTViXzFP6wxyFqZSrzQqczHp0X9FVq+ucgRpfh3Qp2gvTyRHVwQSOBNqft5U+RvbvFxAyJaEubkUbEFZtGbqh0ZpHksrVxJwMnlt5YdLjvbM/Os83lLyeg6klJp09x1MNBoceVPko/3SCXfCf32qLhqSSlhkU97jDyv98vdebHsriPB9muULQXIVisAfS8Svdsq1WCyYsgIlcMcjv1NPiNia2dFVhqUWmJdGMtSz1EKhF0c4BJx9KXQCZutSg87bnlOyuvRtASemzXvHEwwX5+D1DnVWMMyf6tJoJiKCIdy8x8kOK+nCLX6gTd0JfhSyV3Jea8PKDPdijJsZ4/Nqw57e9V22nVie2wLc2B5orX2IPfCdf7u7w0p2ALMFRWimGBvu7akW84s23OaeFCUFfujXYl9usfv5vXvFiabVLQTyFvz4DbMjgzBp5rgiwVolppAgNkPzT+zELUQE7DrUxaPvB8YcXr03ufABEpf4bMawLr9cY29BP+GLLXMcLrTnAi622QVsE54khzaJwLaxXM3qtaNHUucewhAovj25aH6zkiW7IHtXsQKOob4d6hzynWohH/X5Y1uHZRHkNgGhN5kQT6t6ISQh5cDy68yLMZF3TYS9EdiuDOY+AXAKNnnAKQa6p1fkDh3UvjTbfEbF/knmueU3cgfTuy3I="
